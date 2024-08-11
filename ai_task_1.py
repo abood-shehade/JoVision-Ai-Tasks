@@ -16,10 +16,7 @@ def extract_text_from_image(image_path):
         return f"An error occurred: {str(e)}"
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python extract_text.py <image_path>")
-    else:
-        image_path = sys.argv[1]
-        extracted_text = extract_text_from_image(image_path)
-        print("Extracted Text:")
-        print(extracted_text)
+    image_path = sys.argv[1]
+    extracted_text = extract_text_from_image(image_path)
+    print("Extracted Text:")
+    print(extracted_text)
